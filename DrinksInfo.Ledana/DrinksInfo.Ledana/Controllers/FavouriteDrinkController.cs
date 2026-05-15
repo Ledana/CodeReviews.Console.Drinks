@@ -58,6 +58,7 @@ namespace DrinksInfo.Ledana.Controllers
             catch (Exception e)
             {
                 Console.WriteLine("Something went wrong! " + e.Message);
+                return null;
             }
         }
 
@@ -71,6 +72,7 @@ namespace DrinksInfo.Ledana.Controllers
             catch (Exception e)
             {
                 Console.WriteLine("Something went wrong! " + e.Message);
+                return false;
             }
         }
     }

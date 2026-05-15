@@ -56,6 +56,7 @@ namespace DrinksInfo.Ledana
         private void DeleteOneFavourite()
         {
             List<DrinkDetail> favouriteDrinks = FavouriteDrinkController.GetFavouriteDrinks();
+            if (favouriteDrinks is null) return;
 
             TableVisualisationEngine.ShowFavouriteDrinksHttpTable(favouriteDrinks);
 
@@ -81,6 +82,7 @@ namespace DrinksInfo.Ledana
         public async Task SeeAllFavourites()
         {
             List<DrinkDetail> favouriteDrinks = FavouriteDrinkController.GetFavouriteDrinks();
+            if (favouriteDrinks is null) return;
 
             TableVisualisationEngine.ShowFavouriteDrinksHttpTable(favouriteDrinks);
 
